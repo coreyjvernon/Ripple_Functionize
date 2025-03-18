@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="limits" path="/services/data/v63.0/limits/" id="99b716f0-946b-4300-9078-e11e4b6790b4">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="99b716f0-946b-4300-9078-e11e4b6790b4" name="limits" path="/services/data/v63.0/limits/">
   <con:settings>
     <con:setting id="99b716f0-946b-4300-9078-e11e4b6790b4fileName">limits</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="Method 1" id="95a600c4-992e-4bce-92d4-d21cfd972d05" method="GET">
+  <con:method id="95a600c4-992e-4bce-92d4-d21cfd972d05" method="GET" name="Method 1">
     <con:settings/>
     <con:parameters/>
-    <con:request name="Request 1" id="48371664-a47b-47ae-b634-28eece4935f3" mediaType="application/json">
+    <con:request id="48371664-a47b-47ae-b634-28eece4935f3" mediaType="application/json" name="Request 1">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testSuite xmlns:con="http://eviware.com/soapui/config" id="6bcb831d-d06e-4bc8-8e50-e283ccd729c0" name="Salesforce Account">
-  <con:settings id="ca2bdff9-3d0a-4117-98a5-da59ce34a84a">
+  <con:settings>
     <con:setting id="6bcb831d-d06e-4bc8-8e50-e283ccd729c0fileName">Salesforce-Account</con:setting>
   </con:settings>
   <con:runType>SEQUENTIAL</con:runType>

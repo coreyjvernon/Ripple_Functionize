@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="4f3f8810-f5d8-401b-8745-8e9276696bc6" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SFlimits" searchProperties="true" timeout="0">
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="4f3f8810-f5d8-401b-8745-8e9276696bc6" keepSession="false" name="SFlimits" searchProperties="true" timeout="0">
   <con:settings>
     <con:setting id="4f3f8810-f5d8-401b-8745-8e9276696bc6fileName">SFlimits</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="REST Request" id="39925bbf-305d-43bc-9776-9359decff29f">
+  <con:testStep id="39925bbf-305d-43bc-9776-9359decff29f" name="REST Request" type="restrequest">
     <con:settings/>
-    <con:config service="Salesforce" resourcePath="/services/data/v63.0/limits/" methodName="Method 1" xsi:type="con:RestRequestStep">
-      <con:restRequest name="REST Request" id="48371664-a47b-47ae-b634-28eece4935f3" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="Method 1" resourcePath="/services/data/v63.0/limits/" service="Salesforce">
+      <con:restRequest id="48371664-a47b-47ae-b634-28eece4935f3" mediaType="application/json" name="REST Request">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:endpoint>https://orgfarm-687f8cd387-dev-ed.develop.my.salesforce.com/</con:endpoint>
         <con:request/>
         <con:originalUri>https://orgfarm-687f8cd387-dev-ed.develop.my.salesforce.com/limits/</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="5388a423-54a9-419a-ba75-d0f5cb799af3" name="Valid HTTP Status Codes">
+        <con:assertion id="5388a423-54a9-419a-ba75-d0f5cb799af3" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="DataAndMetadataAssertion" id="9777093c-e581-4d30-a37b-ba85731f117a" name="Smart Assertion 2">
+        <con:assertion id="9777093c-e581-4d30-a37b-ba85731f117a" name="Smart Assertion 2" type="DataAndMetadataAssertion">
           <con:configuration xsi:type="con:DataAndMetadataAssertion">
             <con:mode>Received Data</con:mode>
             <con:elements>

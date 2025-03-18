@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="5ec976f8-5f9b-4e8b-8f9a-39d0fa4d4b18" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SFobjects" searchProperties="true" timeout="0">
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="5ec976f8-5f9b-4e8b-8f9a-39d0fa4d4b18" keepSession="false" name="SFobjects" searchProperties="true" timeout="0">
   <con:settings>
     <con:setting id="5ec976f8-5f9b-4e8b-8f9a-39d0fa4d4b18fileName">SFobjects</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="REST Request" id="4711cd66-b73a-4af5-8be7-64435e0ddb42">
+  <con:testStep id="4711cd66-b73a-4af5-8be7-64435e0ddb42" name="REST Request" type="restrequest">
     <con:settings/>
-    <con:config service="Salesforce" methodName="Method 1" resourcePath="/services/data/v63.0/sobjects/Account/" xsi:type="con:RestRequestStep">
-      <con:restRequest name="REST Request" id="53479d82-dd66-4794-9df9-09c1ba41d55a" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="Method 1" resourcePath="/services/data/v63.0/sobjects/Account/" service="Salesforce">
+      <con:restRequest id="53479d82-dd66-4794-9df9-09c1ba41d55a" mediaType="application/json" name="REST Request">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
@@ -14,7 +14,7 @@
         <con:endpoint>https://orgfarm-687f8cd387-dev-ed.develop.my.salesforce.com/</con:endpoint>
         <con:request/>
         <con:originalUri>https://orgfarm-687f8cd387-dev-ed.develop.my.salesforce.com/services/data/v63.0/sobjects/Account/</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="f193e450-ca41-4e9a-8dec-9f116946dfe8" name="Valid HTTP Status Codes">
+        <con:assertion id="f193e450-ca41-4e9a-8dec-9f116946dfe8" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
             <codes>200</codes>

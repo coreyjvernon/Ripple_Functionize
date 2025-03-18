@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockService xmlns:con="http://eviware.com/soapui/config" id="450d68ea-542c-4b30-9ada-18d2b77af24f" port="8088" path="/" host="localhost" name="Salesforce Virtual Service">
+<con:restMockService xmlns:con="http://eviware.com/soapui/config" host="localhost" id="450d68ea-542c-4b30-9ada-18d2b77af24f" name="Salesforce Virtual Service" path="/" port="8088">
   <con:settings>
     <con:setting id="450d68ea-542c-4b30-9ada-18d2b77af24ffileName">Salesforce-Virtual-Service</con:setting>
   </con:settings>

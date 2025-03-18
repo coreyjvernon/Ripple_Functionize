@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="Account" path="services/data/v63.0/sobjects/Account/" id="3da31160-e94f-4bac-9ccc-58f790d1a06e">
+<con:resource xmlns:con="http://eviware.com/soapui/config" id="3da31160-e94f-4bac-9ccc-58f790d1a06e" name="Account" path="services/data/v63.0/sobjects/Account/">
   <con:settings>
     <con:setting id="3da31160-e94f-4bac-9ccc-58f790d1a06efileName">Account</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="Method 1" id="8e3e9626-e016-4e35-bd65-bb66922fe4c3" method="GET">
+  <con:method id="8e3e9626-e016-4e35-bd65-bb66922fe4c3" method="GET" name="Method 1">
     <con:settings/>
     <con:parameters/>
-    <con:request name="Request 1" id="85a5c26b-eb32-4c5f-b814-3688b1ac0056" mediaType="application/json">
+    <con:request id="85a5c26b-eb32-4c5f-b814-3688b1ac0056" mediaType="application/json" name="Request 1">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>
