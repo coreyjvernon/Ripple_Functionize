@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="limits" path="/services/data/v63.0/limits/" id="99b716f0-946b-4300-9078-e11e4b6790b4">
+  <con:settings>
+    <con:setting id="99b716f0-946b-4300-9078-e11e4b6790b4fileName">limits</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="95a600c4-992e-4bce-92d4-d21cfd972d05" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="48371664-a47b-47ae-b634-28eece4935f3" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://orgfarm-687f8cd387-dev-ed.develop.my.salesforce.com/</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://orgfarm-687f8cd387-dev-ed.develop.my.salesforce.com/limits/</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>Bearer</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="464b8c75-34b9-488b-ab0c-5c52de62a013">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="464b8c75-34b9-488b-ab0c-5c52de62a013">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="464b8c75-34b9-488b-ab0c-5c52de62a013">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>
