@@ -1,0 +1,42 @@
+name: Ripple Salesforce Functional Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-readyapi-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout your code (to retrieve your ReadyAPI project file)
+      - uses: actions/checkout@v4
+      
+      # Step 2: Set up Java (required for ReadyAPI)
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      # Step 3: Download and install ReadyAPI TestRunner CLI
+      - name: Download ReadyAPI CLI
+        run: |
+          wget https://download.smartbear.com/ready-api/3.49.0/ReadyAPI-3.49.0-linux-bin.tar.gz
+          tar -xzf ReadyAPI-3.49.0-linux-bin.tar.gz
+          chmod +x ./ReadyAPI-3.49.0/bin/testrunner.sh
+
+
+      # Step 5: Execute ReadyAPI Functional Tests
+      - name: Execute Salesforce API Functional Tests
+        run: |
+          /Applications/ReadyAPI-3.58.0.app/Contents/Resources/app/bin/testrunner.sh "-sSalesforce Account" -cSFlimits -r -a -j "-RJUnit-Style HTML Report" -FXML "-EDefault environment" /Users/kingofclubsmiami/Desktop/Professional/SmartBear/ReadyAPI/Tests/Ripple-demo-readyapi-project.xml
+
+      # Step 6: Upload test report artifacts
+      - name: Upload Test Reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: readyapi-salesforce-test-report
+          path: ./reports/**
